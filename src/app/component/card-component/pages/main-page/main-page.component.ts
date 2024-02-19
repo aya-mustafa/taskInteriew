@@ -16,7 +16,7 @@ export class MainPageComponent {
   currentElement:any;
   arr: any[]=[];
   selectCard(card: any,i:number ){
-    this.cards.forEach((c: { isSelected: boolean; }) => c.isSelected = false);
+    this.cards.forEach((c: { isSelected: boolean; }) => this.isSelected = false);
     card.isSelected = true;
     this.isSelected = true;
     this.currentElement = this.cards[i]
